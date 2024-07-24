@@ -31,6 +31,7 @@ workload:
                 - CHOWN
                 - DAC_OVERRIDE
                 # Needed for: Nginx Service
+                - NET_BIND_SERVICE
                 - FOWNER
           fixedEnv:
             PUID: {{ .Values.npmID.user }}
