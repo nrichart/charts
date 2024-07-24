@@ -1,0 +1,10 @@
+npmNetwork:
+  webPort: 31000
+
+npmStorage:
+  data:
+    type: hostPath
+    hostPath: /mnt/{{ .Release.Name }}/data
+  certs:
+    type: hostPath
+    hostPath: /mnt/{{ .Release.Name }}/certs
