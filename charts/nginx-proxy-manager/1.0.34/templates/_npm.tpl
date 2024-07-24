@@ -78,11 +78,13 @@ service:
       http:
         enabled: true
         port: 80
+        nodePort: 80
         targetPort: 80
         targetSelector: npm
       https:
         enabled: true
         port: 443
+        nodePort: 443
         targetPort: 443
         targetSelector: npm
 
